@@ -8,7 +8,8 @@ public class calculator {
         int b=sc.nextInt();
         System.out.print("Enter the operator:");
         char operator=sc.next().charAt(0);
-        switch (operator){
+        switch (operator)
+        {
             case '+':System.out.println(a+b);
                     break;
             case '-':System.out.println(a-b);
@@ -21,6 +22,5 @@ public class calculator {
                     break;
             default:System.out.println("Invalid Operator");        
         }
-
     }
 }
