@@ -1,5 +1,3 @@
-package Loops;
-
 // Printing a lines n number of times:
 public class example1 {
     public static void main(String[] args) {

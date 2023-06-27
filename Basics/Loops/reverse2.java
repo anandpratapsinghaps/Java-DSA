@@ -1,4 +1,3 @@
-package Loops;
 import java.util.*;
 public class reverse2{
     public static void main(String[] args) {
