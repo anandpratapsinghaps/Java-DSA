@@ -10,5 +10,6 @@ public class breakloop{
             }
             System.out.println(n);
         }while(true);
+        sc.close();
     }
 }

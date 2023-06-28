@@ -9,5 +9,6 @@ public class reverse{
             System.out.print(lastdigit);
             n=n/10;
         }
+        sc.close();
     }
 }

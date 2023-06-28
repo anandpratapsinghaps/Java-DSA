@@ -14,5 +14,6 @@ public class Switch {
             break;
             default : System.out.println("I think I'm loosing my mind");
         }
+        button.close();
     }
 }

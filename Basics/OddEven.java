@@ -26,5 +26,6 @@ public class OddEven{
                 System.out.print(arr[i] + " ");
             }
         }
+        sc.close();
     }
 }
