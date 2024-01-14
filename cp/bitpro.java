@@ -1,3 +1,5 @@
+package cp;
+
 //contest 173 div 2---codeforces
 
 import java.util.Scanner;
@@ -9,7 +11,7 @@ public class bitpro {
         // while(n-->0)
         // r+=s.next().contains("+")?1:-1;
         // System.out.println(r);
-        // s.close();
+        s.close();
         char[] a=s.next().toCharArray();
         for(int i=0;i<a.length;i++){
             if(a[i]>'4'){
