@@ -13,6 +13,6 @@ public class half_pyramid {
         }
     }
     public static void main(String[] args) {
-        pym(6);
+        pym(7);
     }
 }
