@@ -1,4 +1,3 @@
-// import java.util.*;
 public class Reverse {
     public static void rev(int arr[]){
         int start=0; 
