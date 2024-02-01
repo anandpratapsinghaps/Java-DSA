@@ -11,7 +11,7 @@ public class buy_sell_stock {
         return maxprofit;
     }
     public static void main(String[] args) {
-        int arr[]={7,1,5,3,6,4};
+        int arr[]={7,1,5,3,6,4,9};
         System.out.println(buysellstock(arr));
     }
 }
