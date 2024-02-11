@@ -11,6 +11,20 @@ public class Basic_Sorting_Algos{
             }
         }
     }
+
+    public static void Selectionsort(int arr[]){
+        for(int i=0;i<arr.length-1;i++){
+            int min=i;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[min]>arr[j]){
+                    min=j;
+                }
+            }
+            int temp=arr[min];
+            arr[min]=arr[i];
+            arr[i]=temp;
+        }
+    }
     public static void printarr(int arr[]){
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
@@ -18,8 +32,9 @@ public class Basic_Sorting_Algos{
         System.out.println();
     }
     public static void main(String[] args) {
-        int arr[]={2,3,1,5,6,3,9};
-        BubbleSort(arr);
+        int arr[]={2,3,8,1,5,6,7,9,4};
+        // BubbleSort(arr);
+        Selectionsort(arr);
         printarr(arr);
     }
 }
