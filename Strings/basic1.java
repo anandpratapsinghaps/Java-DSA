@@ -8,6 +8,16 @@ public class basic1 {
         }
         System.out.println();
     }
+
+    public static boolean isPlaindrome(String str){
+        for(int i=0; i<str.length()/2;i++){
+            int n=str.length();
+            if(str.charAt(i)!=str.charAt(n-i-1)){
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args) {
         // Scanner sc=new Scanner(System.in);
         // String name;
@@ -18,6 +28,8 @@ public class basic1 {
         String lastname = "Singh";
         String fullname= firstname+" "+lastname;
         // System.out.println(fullname.length());
-        printletter(fullname);
+        // printletter(fullname);
+        String str="racecar";
+        System.out.println(isPlaindrome(str));
     }
 }
