@@ -31,6 +31,7 @@ public class bitWise {
     }
 
     public static int updateBit(int n, int i, int newBit){
+        n=clearIBits(n, i);
         int mask=newBit<<i;
         return n|mask;
     }
@@ -47,6 +48,10 @@ public class bitWise {
         int mask=a|b;
         return n&mask;
     }
+
+    public static boolean isPowerOfTwo(int n){
+        return (n&(n-1)) == 0;
+    }
     public static void main(String[] args) {
         // System.out.println(5<<2);
         // System.out.println(5<<3);
@@ -55,12 +60,13 @@ public class bitWise {
         // OddEven(3);
         // OddEven(10);
         // OddEven(13);
-        System.out.println(getIthBit(5, 2));
+        // System.out.println(getIthBit(5, 2));
         // System.out.println(setIthBit(10, 2));
         // System.out.println(clearIthBit(10, 1));
         // System.out.println(updateBit(10, 2, 1));
         // System.out.println(clearIBits(15, 2));
         // System.out.println(clearRange(10, 2, 4));
+        System.out.println(isPowerOfTwo(5));
     }
 
 }
