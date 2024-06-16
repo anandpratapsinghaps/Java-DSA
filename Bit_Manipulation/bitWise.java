@@ -97,7 +97,7 @@ public class bitWise {
         // OddEven(10);
         // OddEven(13);
         // System.out.println(getIthBit(5, 2));
-        // System.out.println(setIthBit(10, 2));
+        System.out.println(setIthBit(8, 1));
         // System.out.println(clearIthBit(10, 1));
         // System.out.println(updateBit(10, 2, 1));
         // System.out.println(clearIBits(15, 2));
@@ -105,7 +105,7 @@ public class bitWise {
         // System.out.println(isPowerOfTwo(5));
         // System.out.println(countSetBits(10));
         // System.out.println(fastExpo(3, 2));
-        System.out.println(modExpo(3, 2, 5));
+        // System.out.println(modExpo(3, 2, 5));
     }
 
 }
