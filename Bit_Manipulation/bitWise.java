@@ -29,6 +29,24 @@ public class bitWise {
         int bitMask=~(1<<i);
         return n&bitMask;
     }
+
+    public static int updateBit(int n, int i, int newBit){
+        int mask=newBit<<i;
+        return n|mask;
+    }
+
+    public static int clearIBits(int n, int i){
+        // int mask = (~0)<<i;
+        int mask = -1<<i;
+        return n&mask;
+    }
+
+    public static int clearRange(int n, int i, int j){
+        int a=(~0)<<(j+1);
+        int b=(1<<i)-1;
+        int mask=a|b;
+        return n&mask;
+    }
     public static void main(String[] args) {
         // System.out.println(5<<2);
         // System.out.println(5<<3);
@@ -37,9 +55,12 @@ public class bitWise {
         // OddEven(3);
         // OddEven(10);
         // OddEven(13);
-        // System.out.println(getIthBit(5, 2));
+        System.out.println(getIthBit(5, 2));
         // System.out.println(setIthBit(10, 2));
-        System.out.println(clearIthBit(10, 1));
+        // System.out.println(clearIthBit(10, 1));
+        // System.out.println(updateBit(10, 2, 1));
+        // System.out.println(clearIBits(15, 2));
+        // System.out.println(clearRange(10, 2, 4));
     }
 
 }
