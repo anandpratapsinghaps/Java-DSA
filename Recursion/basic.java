@@ -26,5 +26,6 @@ public class basic {
         int n=sc.nextInt();
         // printDec(n);5
         System.out.println(fact(n));
+        sc.close();
     }
 }
