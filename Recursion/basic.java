@@ -51,6 +51,16 @@ public class basic {
         return isSorted(arr, i+1);
     }
 
+    public static int firstOcc(int arr[], int key, int i){
+        if(i==arr.length){
+            return -1;
+        }
+        if(arr[i]==key){
+            return i;
+        }
+        return firstOcc(arr, key, i+1);
+    }
+
     public static void main(String[] args) {
         // Scanner sc=new Scanner(System.in);
         // System.out.print("Enter your number: ");
@@ -61,6 +71,7 @@ public class basic {
         // System.out.println(fibocnacci(n));
         // sc.close();
         int arr[] = {1,5,3,4,5};
-        System.out.println(isSorted(arr, 4));
+        // System.out.println(isSorted(arr, 4));
+        System.out.println(firstOcc(arr, 5, 0));
     }
 }
