@@ -41,14 +41,26 @@ public class basic {
         return fib;
     }
 
+    public static boolean isSorted(int arr[] , int i){
+        if(i==arr.length-1){
+            return true;
+        }
+        if(arr[i]>arr[i+1]){
+            return false;
+        }
+        return isSorted(arr, i+1);
+    }
+
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter your number: ");
-        int n=sc.nextInt();
+        // Scanner sc=new Scanner(System.in);
+        // System.out.print("Enter your number: ");
+        // int n=sc.nextInt();
         // printDec(n);5
         // System.out.println(fact(n));
         // System.out.println(Sum(n));
-        System.out.println(fibocnacci(n));
-        sc.close();
+        // System.out.println(fibocnacci(n));
+        // sc.close();
+        int arr[] = {1,5,3,4,5};
+        System.out.println(isSorted(arr, 4));
     }
 }
