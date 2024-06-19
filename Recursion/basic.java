@@ -72,6 +72,15 @@ public class basic {
         return isFound;
     }
 
+    public static int powerOf(int x, int n){
+        if(n==0) return 1;
+
+        // int xn1=powerOf(x, n-1);
+        // int xn=x*xn1;
+        // return xn;
+        return x*powerOf(x, n-1);
+    }
+
     public static void main(String[] args) {
         // Scanner sc=new Scanner(System.in);
         // System.out.print("Enter your number: ");
@@ -81,9 +90,10 @@ public class basic {
         // System.out.println(Sum(n));
         // System.out.println(fibocnacci(n));
         // sc.close();
-        int arr[] = {1,5,3,4,5};
+        // int arr[] = {1,5,3,4,5};
         // System.out.println(isSorted(arr, 4));
         // System.out.println(firstOcc(arr, 5, 0));
-        System.out.println(lastOcc(arr, 5, 0));
+        // System.out.println(lastOcc(arr, 5, 0));
+        System.out.println(powerOf(2, 10));
     }
 }
