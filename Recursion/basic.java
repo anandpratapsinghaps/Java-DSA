@@ -81,6 +81,17 @@ public class basic {
         return x*powerOf(x, n-1);
     }
 
+    public static int optimizedPow(int x, int n){
+        if(n==0) return 1;
+        int halfPow=optimizedPow(x, n/2);
+        int halfPowsq = halfPow*halfPow;
+
+        if(n%2!=0){
+            halfPowsq=x*halfPowsq;
+        }
+        return halfPowsq;
+    }
+
     public static void main(String[] args) {
         // Scanner sc=new Scanner(System.in);
         // System.out.print("Enter your number: ");
@@ -94,6 +105,7 @@ public class basic {
         // System.out.println(isSorted(arr, 4));
         // System.out.println(firstOcc(arr, 5, 0));
         // System.out.println(lastOcc(arr, 5, 0));
-        System.out.println(powerOf(2, 10));
+        // System.out.println(powerOf(2, 10));
+        System.out.println(optimizedPow(2, 10));
     }
 }

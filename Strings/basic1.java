@@ -1,5 +1,4 @@
 package Strings;
-import java.util.*;
 
 public class basic1 {
     public static void printletter(String str){
