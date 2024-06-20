@@ -107,10 +107,26 @@ public class basic {
         return totalWays;
     } 
 
+    //remove duplicates
+
+    public static void removeDuplicates(String str, int idx, StringBuilder newStr, boolean map[]){
+        if(idx==str.length()){
+            System.out.println(newStr);
+            return;
+        }
+        char currChar = str.charAt(idx);
+        if(map[currChar-'a']==true){
+            removeDuplicates(str, idx+1, newStr, map);
+        }
+        else{
+            map[currChar-'a']=true;
+            removeDuplicates(str, idx+1, newStr.append(currChar), map);
+        }
+    }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter your number: ");
-        int n=sc.nextInt();
+        // Scanner sc=new Scanner(System.in);
+        // System.out.print("Enter your number: ");
+        // int n=sc.nextInt();
         // printDec(n);5
         // System.out.println(fact(n));
         // System.out.println(Sum(n));
@@ -122,6 +138,8 @@ public class basic {
         // System.out.println(lastOcc(arr, 5, 0));
         // System.out.println(powerOf(2, 10));
         // System.out.println(optimizedPow(2, 10));
-        System.out.println(tilingProblem(n));
+        // System.out.println(tilingProblem(n));
+        String str = "hello";
+        removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
     }
 }
