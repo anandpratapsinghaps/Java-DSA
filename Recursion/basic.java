@@ -91,11 +91,26 @@ public class basic {
         }
         return halfPowsq;
     }
+    
+    //tiling problem
+
+    public static int tilingProblem(int n){
+        if(n==0||n==1) return 1;
+
+        //for vertical
+        int v=tilingProblem(n-1);
+
+        //for horizontal
+        int h=tilingProblem(n-2);
+        
+        int totalWays=v+h;
+        return totalWays;
+    } 
 
     public static void main(String[] args) {
-        // Scanner sc=new Scanner(System.in);
-        // System.out.print("Enter your number: ");
-        // int n=sc.nextInt();
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your number: ");
+        int n=sc.nextInt();
         // printDec(n);5
         // System.out.println(fact(n));
         // System.out.println(Sum(n));
@@ -106,6 +121,7 @@ public class basic {
         // System.out.println(firstOcc(arr, 5, 0));
         // System.out.println(lastOcc(arr, 5, 0));
         // System.out.println(powerOf(2, 10));
-        System.out.println(optimizedPow(2, 10));
+        // System.out.println(optimizedPow(2, 10));
+        System.out.println(tilingProblem(n));
     }
 }
