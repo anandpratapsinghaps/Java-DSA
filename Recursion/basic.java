@@ -123,10 +123,27 @@ public class basic {
             removeDuplicates(str, idx+1, newStr.append(currChar), map);
         }
     }
+
+    //pairing problem
+
+    public static int fPair(int n){
+        if(n==0||n==1||n==2) return n;
+
+        //choice
+        //single
+        int f1=fPair(n-1);
+
+        //pair
+        int f2=fPair(n-2);
+        int pairWays=(n-1)*f2;
+
+        int totalWays=f1+pairWays;
+        return totalWays;
+    }
     public static void main(String[] args) {
-        // Scanner sc=new Scanner(System.in);
-        // System.out.print("Enter your number: ");
-        // int n=sc.nextInt();
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your number: ");
+        int n=sc.nextInt();
         // printDec(n);5
         // System.out.println(fact(n));
         // System.out.println(Sum(n));
@@ -139,7 +156,8 @@ public class basic {
         // System.out.println(powerOf(2, 10));
         // System.out.println(optimizedPow(2, 10));
         // System.out.println(tilingProblem(n));
-        String str = "hello";
-        removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
+        // String str = "hello";
+        // removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
+        System.out.println(fPair(n));
     }
 }
