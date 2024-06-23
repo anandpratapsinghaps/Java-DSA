@@ -140,10 +140,23 @@ public class basic {
         int totalWays=f1+pairWays;
         return totalWays;
     }
+
+    //binary String
+
+    public static void BinStr(int n, int lastPlace, String str){
+        if(n==0){
+            System.out.println(str);
+            return;
+        }
+        BinStr(n-1, 0, str+"0");
+        if(lastPlace==0){
+            BinStr(n-1,1, str+"1");
+        }
+    }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter your number: ");
-        int n=sc.nextInt();
+        // Scanner sc=new Scanner(System.in);
+        // System.out.print("Enter your number: ");
+        // int n=sc.nextInt();
         // printDec(n);5
         // System.out.println(fact(n));
         // System.out.println(Sum(n));
@@ -158,6 +171,7 @@ public class basic {
         // System.out.println(tilingProblem(n));
         // String str = "hello";
         // removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
-        System.out.println(fPair(n));
+        // System.out.println(fPair(n));
+        BinStr(3, 1, "");
     }
 }
