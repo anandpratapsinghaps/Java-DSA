@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NQueens",
+            "request": "launch",
+            "mainClass": "Backtracking.NQueens",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "Permutation",
             "request": "launch",
             "mainClass": "Backtracking.Permutation",
