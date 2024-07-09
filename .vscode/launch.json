@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GridWays",
+            "request": "launch",
+            "mainClass": "Backtracking.GridWays",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "NQueens",
             "request": "launch",
             "mainClass": "Backtracking.NQueens",
