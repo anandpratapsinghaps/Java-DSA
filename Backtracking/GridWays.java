@@ -9,6 +9,8 @@ public class GridWays {
         else if(i==n || j==m){
             return 0;
         }
+
+        //recursion
         int w1=gridWays(i+1, j, n, m);
         int w2=gridWays(i, j+1, n, m);
         return w1+w2;
