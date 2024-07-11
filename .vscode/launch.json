@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "basic",
+            "request": "launch",
+            "mainClass": "ArrayList.basic",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "Sudoku",
             "request": "launch",
             "mainClass": "Backtracking.Sudoku",
