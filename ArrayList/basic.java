@@ -51,6 +51,5 @@ public class basic {
         }
     }
     System.out.println(max);
-
     }
 }
