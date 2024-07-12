@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pairs",
+            "request": "launch",
+            "mainClass": "pairs",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "two_D",
             "request": "launch",
             "mainClass": "ArrayList.two_D",
