@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxWaterContains",
+            "request": "launch",
+            "mainClass": "ArrayList.MaxWaterContains",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "pairs",
             "request": "launch",
             "mainClass": "pairs",
