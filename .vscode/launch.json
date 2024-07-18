@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "basic",
+            "request": "launch",
+            "mainClass": "LinkedList.basic",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "Pairsum",
             "request": "launch",
             "mainClass": "ArrayList.Pairsum",
