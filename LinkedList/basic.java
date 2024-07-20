@@ -15,6 +15,7 @@ public class basic {
 
     public static Node head;
     public static Node tail;
+    public static int size;
 
     //no need to make method static isko hum ll obj k through call krenge aur main method bhi static hai
 
