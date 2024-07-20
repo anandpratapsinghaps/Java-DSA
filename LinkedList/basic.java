@@ -21,6 +21,7 @@ public class basic {
 
     public void addFirst(int data){
         Node newNode = new Node(data);
+        size++;
         if(head==null){
             head = tail = newNode;
             return;
@@ -31,6 +32,7 @@ public class basic {
 
     public void addLast(int data){
         Node newNode = new Node(data);
+        size++;
         if(head==null){
             head = tail = newNode;
         }
@@ -56,6 +58,7 @@ public class basic {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i = 0;
         while(i<idx-1){
@@ -76,5 +79,6 @@ public class basic {
         ll.printLL();
         ll.add(2, 9);
         ll.printLL();
+        System.out.println(ll.size);
     }
 }
