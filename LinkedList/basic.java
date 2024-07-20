@@ -136,6 +136,19 @@ public class basic {
     public int recSearch(int key){
         return helper(head, key);
     }
+
+    public void reverse(){
+        Node prev = null;
+        Node curr = head;
+        Node temp = null;
+        while(curr != null){
+            temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
+        }
+        head = prev;
+    }
     public static void main(String[] args) {
         basic ll = new basic();
         ll.addFirst(1);
@@ -143,15 +156,17 @@ public class basic {
         ll.addLast(3);
         ll.addLast(4);
         ll.printLL();
-        ll.add(2, 9);
+        // ll.add(2, 9);
+        // ll.printLL();
+        // ll.remvoeFirst();
+        // ll.printLL();
+        // System.out.println(basic.size);
+        // ll.removeLast();
+        // ll.printLL();
+        // System.out.println(ll.itrSearch(3));
+        // System.out.println(ll.recSearch(2));
+        // System.out.println(ll.recSearch(3));
+        ll.reverse();
         ll.printLL();
-        ll.remvoeFirst();
-        ll.printLL();
-        System.out.println(basic.size);
-        ll.removeLast();
-        ll.printLL();
-        System.out.println(ll.itrSearch(3));
-        System.out.println(ll.recSearch(2));
-        System.out.println(ll.recSearch(3));
     }
 }
