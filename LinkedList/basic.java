@@ -118,7 +118,7 @@ public class basic {
         ll.printLL();
         ll.remvoeFirst();
         ll.printLL();
-        System.out.println(ll.size);
+        System.out.println(basic.size);
         ll.removeLast();
         ll.printLL();
     }
