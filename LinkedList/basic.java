@@ -48,12 +48,28 @@ public class basic {
         }
         System.out.println("null");
     }
+
+    public void add(int idx, int data){
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i = 0;
+        while(i<idx-1){
+            temp = temp.next;
+            i++;
+        }
+
+        //i = idx-1 (temp-->prev)
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
     public static void main(String[] args) {
         basic ll = new basic();
         ll.addFirst(1);
         ll.addFirst(2);
         ll.addLast(3);
         ll.addLast(4);
+        ll.printLL();
+        ll.add(2, 9);
         ll.printLL();
     }
 }
