@@ -149,10 +149,33 @@ public class basic {
         }
         head = prev;
     }
+
+    public void delNthEnd(int n){
+        int sz = 0;
+        Node temp = head;
+        while(temp != null){
+            temp = temp.next;
+            sz++;
+        }
+        if(n == sz){   // if n is head
+            head = head.next;
+        }
+
+        //sz-n
+        int i = 1;
+        int idx = sz - n;
+        Node prev = head;
+        while(i<idx){
+            prev = prev.next;
+            i++;
+        }
+        prev.next = prev.next.next;
+        return;
+    }
     public static void main(String[] args) {
         basic ll = new basic();
-        ll.addFirst(1);
         ll.addFirst(2);
+        ll.addFirst(1);
         ll.addLast(3);
         ll.addLast(4);
         ll.printLL();
@@ -166,7 +189,10 @@ public class basic {
         // System.out.println(ll.itrSearch(3));
         // System.out.println(ll.recSearch(2));
         // System.out.println(ll.recSearch(3));
-        ll.reverse();
+        // ll.reverse();
+        // ll.printLL();
+        ll.delNthEnd(3);
         ll.printLL();
+
     }
 }
