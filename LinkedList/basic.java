@@ -29,11 +29,31 @@ public class basic {
     }
 
     public void addLast(int data){
-        
+        Node newNode = new Node(data);
+        if(head==null){
+            head = tail = newNode;
+        }
+        tail.next = newNode;
+        tail = newNode;
+    }
+
+    public void printLL(){
+        if(head == null){
+            System.out.println("kuch nhi hai");
+        }
+        Node temp = head;
+        while(temp!=null){
+            System.out.print(temp.data+ " --> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
     }
     public static void main(String[] args) {
         basic ll = new basic();
         ll.addFirst(1);
         ll.addFirst(2);
+        ll.addLast(3);
+        ll.addLast(4);
+        ll.printLL();
     }
 }
