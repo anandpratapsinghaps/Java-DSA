@@ -107,6 +107,19 @@ public class basic {
         size--;
         return val;
     }
+
+    public int itrSearch(int key){
+        Node temp = head;
+        int i = 0;
+        while(temp != null){
+            if(temp.data == key){
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1;
+    }
     public static void main(String[] args) {
         basic ll = new basic();
         ll.addFirst(1);
@@ -121,5 +134,6 @@ public class basic {
         System.out.println(basic.size);
         ll.removeLast();
         ll.printLL();
+        System.out.println(ll.itrSearch(3));
     }
 }
