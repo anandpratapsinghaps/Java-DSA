@@ -70,6 +70,22 @@ public class basic {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+
+    public int remvoeFirst(){
+        if(size==0){
+            System.out.println("khaali hai");
+            return Integer.MIN_VALUE;
+        } else if(size==1){
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+    }
     public static void main(String[] args) {
         basic ll = new basic();
         ll.addFirst(1);
@@ -78,6 +94,8 @@ public class basic {
         ll.addLast(4);
         ll.printLL();
         ll.add(2, 9);
+        ll.printLL();
+        ll.remvoeFirst();
         ll.printLL();
         System.out.println(ll.size);
     }
