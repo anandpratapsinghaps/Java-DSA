@@ -172,6 +172,17 @@ public class basic {
         prev.next = prev.next.next;
         return;
     }
+
+    //slow-fast approach 
+    public int mid(Node head){
+        Node slow = head;
+        Node fast = head;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow.data;
+    }
     public static void main(String[] args) {
         basic ll = new basic();
         ll.addFirst(2);
@@ -191,8 +202,8 @@ public class basic {
         // System.out.println(ll.recSearch(3));
         // ll.reverse();
         // ll.printLL();
-        ll.delNthEnd(3);
-        ll.printLL();
-
+        // ll.delNthEnd(3);
+        // ll.printLL();
+        System.out.println(ll.mid(head));
     }
 }
