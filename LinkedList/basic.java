@@ -174,21 +174,54 @@ public class basic {
     }
 
     //slow-fast approach 
-    public int mid(Node head){
+    public Node findMid(Node head){
         Node slow = head;
         Node fast = head;
         while(fast != null && fast.next != null){
             slow = slow.next;
             fast = fast.next.next;
         }
-        return slow.data;
+        return slow;
     }
+
+    public boolean checkPalindrome(){
+        if(head == null || head.next == null){
+            return true;
+        }
+
+        //step 1 - find mid
+        Node midNode = findMid(head);
+
+        // step 2 - reverse 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node right = prev;
+        Node left = head;
+
+        while(right != null){
+            if(left.data != right.data){
+                return false;
+            }
+            right =right.next;
+            left = left.next;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         basic ll = new basic();
         ll.addFirst(2);
         ll.addFirst(1);
-        ll.addLast(3);
-        ll.addLast(4);
+        ll.addLast(2);
+        ll.addLast(1);
         ll.printLL();
         // ll.add(2, 9);
         // ll.printLL();
@@ -204,6 +237,7 @@ public class basic {
         // ll.printLL();
         // ll.delNthEnd(3);
         // ll.printLL();
-        System.out.println(ll.mid(head));
+        // System.out.println(ll.mid(head));
+        System.out.println(ll.checkPalindrome());
     }
 }
