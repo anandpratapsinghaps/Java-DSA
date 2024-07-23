@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LLCollection",
+            "request": "launch",
+            "mainClass": "LinkedList.LLCollection",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "LLCycle",
             "request": "launch",
             "mainClass": "LinkedList.LLCycle",
