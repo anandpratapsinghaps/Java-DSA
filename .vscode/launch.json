@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ZIgZagLL",
+            "request": "launch",
+            "mainClass": "LinkedList.ZIgZagLL",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "MergeSortLL",
             "request": "launch",
             "mainClass": "LinkedList.MergeSortLL",
