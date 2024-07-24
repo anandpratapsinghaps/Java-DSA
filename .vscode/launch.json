@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MergeSortLL",
+            "request": "launch",
+            "mainClass": "LinkedList.MergeSortLL",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
+            "name": "MeregeSortLL",
+            "request": "launch",
+            "mainClass": "LinkedList.MeregeSortLL",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "LLCollection",
             "request": "launch",
             "mainClass": "LinkedList.LLCollection",
