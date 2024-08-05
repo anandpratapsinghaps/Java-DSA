@@ -30,6 +30,56 @@ public class DoubleLL {
         head = newNode;
     }
 
+    public int removeFirst(){
+        if(head == null){
+            System.out.println("bhag ja bsdk kuch nhi hai");
+            return Integer.MIN_VALUE;
+        }
+        if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size--;
+        }
+        int val = head.data;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return val;
+    }
+
+    public void addLast(int data){
+        Node newNode = new Node(data);
+        size++;
+        if(head == null){
+            head = tail = newNode;
+        }
+        tail.next = newNode;
+        newNode.prev = tail;
+        tail = newNode;
+    }
+
+    public int removeLast(){
+        if(head == null){
+            System.out.println("khaali hai");
+            return Integer.MIN_VALUE;
+        }
+        else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        Node curr = head;
+        for(int i=0; i<size-2; i++){
+            curr = curr.next;
+        }
+        int val = curr.next.data;
+        curr.next = null;
+        tail.prev = curr;
+        tail = curr;
+        size--;
+        return val;
+    }
     public void printLL(){
         Node temp = head;
         while(temp != null){
@@ -47,5 +97,15 @@ public class DoubleLL {
         dll.addFirst(1);
         dll.printLL();
         System.out.println(dll.size);
+        dll.addLast(6);
+        dll.printLL();
+        System.out.println(dll.size);
+        dll.removeLast();
+        dll.printLL();
+        System.out.println(dll.size);
+
+        // dll.removeFirst();
+        // dll.printLL();
+        // System.out.println(dll.size);
     }
 }
