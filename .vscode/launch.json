@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DoubleLL",
+            "request": "launch",
+            "mainClass": "LinkedList.DoubleLL",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "ZIgZagLL",
             "request": "launch",
             "mainClass": "LinkedList.ZIgZagLL",
