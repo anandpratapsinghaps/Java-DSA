@@ -1,4 +1,4 @@
-// import java.util.*;
+import java.util.*;
 public class ls {
     public static int linearsearch(int arr[],int key){
         for(int i=0;i<arr.length;i++){
