@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "basic",
+            "request": "launch",
+            "mainClass": "Stack.basic",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "stackLinkedList",
             "request": "launch",
             "mainClass": "Stack.stackLinkedList",
