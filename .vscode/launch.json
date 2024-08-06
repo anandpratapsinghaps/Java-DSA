@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "reverseStack",
+            "request": "launch",
+            "mainClass": "Stack.reverseStack",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "reverseString",
             "request": "launch",
             "mainClass": "Stack.reverseString",
