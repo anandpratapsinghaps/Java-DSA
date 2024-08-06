@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "stackArrList",
+            "request": "launch",
+            "mainClass": "Stack.stackArrList",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "DoubleLL",
             "request": "launch",
             "mainClass": "LinkedList.DoubleLL",
