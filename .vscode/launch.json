@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StockSpan",
+            "request": "launch",
+            "mainClass": "Stack.StockSpan",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "reverseStack",
             "request": "launch",
             "mainClass": "Stack.reverseStack",
