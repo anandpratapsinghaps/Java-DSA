@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ValidParenthesis",
+            "request": "launch",
+            "mainClass": "Stack.ValidParenthesis",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "NextGreater",
             "request": "launch",
             "mainClass": "Stack.NextGreater",
