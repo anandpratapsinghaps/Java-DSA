@@ -1,16 +1,34 @@
 package Stack;
 import java.util.*;
 public class NextGreater {
+    // public static int[] nextGreater(int arr[]){
+    //     int res[] = new int[arr.length];
+    //     Arrays.fill(res, -1);
+    //     for(int i=0; i<arr.length; i++){
+    //         for(int j=i+1; j<arr.length; j++){
+    //             if(arr[j]>arr[i]){
+    //                 res[i] = arr[j];
+    //                 break;
+    //             }
+    //         }
+    //     }
+    //     return res;
+    // }
+
+    //using stack
     public static int[] nextGreater(int arr[]){
         int res[] = new int[arr.length];
-        Arrays.fill(res, -1);
-        for(int i=0; i<arr.length; i++){
-            for(int j=i+1; j<arr.length; j++){
-                if(arr[j]>arr[i]){
-                    res[i] = arr[j];
-                    break;
-                }
+        Stack<Integer> s = new Stack<>();
+        for(int i=arr.length-1; i>=0; i--){
+            while(!s.isEmpty() && arr[s.peek()]<=arr[i]){
+                s.pop();
             }
+            if(s.isEmpty()){
+                res[i] = -1;
+            } else{
+                res[i] = arr[s.peek()];
+            }
+            s.push(i);
         }
         return res;
     }
