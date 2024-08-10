@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NextGreater",
+            "request": "launch",
+            "mainClass": "Stack.NextGreater",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "StockSpan",
             "request": "launch",
             "mainClass": "Stack.StockSpan",
