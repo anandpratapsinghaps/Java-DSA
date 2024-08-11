@@ -42,7 +42,7 @@ public class MaxArea {
         return maxReactArea;
     }
     public static void main(String[] args) {
-        int height[] = {2,1,5,6,2,3};
+        int height[] = {2,4};
         int res = maxAreaHistogram(height);
         System.out.println(res);
     }
