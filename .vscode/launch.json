@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QueueArr",
+            "request": "launch",
+            "mainClass": "Queue.QueueArr",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "MaxArea",
             "request": "launch",
             "mainClass": "Stack.MaxArea",
