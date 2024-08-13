@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CircularQueue",
+            "request": "launch",
+            "mainClass": "Queue.CircularQueue",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "QueueArr",
             "request": "launch",
             "mainClass": "Queue.QueueArr",
