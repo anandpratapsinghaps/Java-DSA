@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InterLeave",
+            "request": "launch",
+            "mainClass": "Queue.InterLeave",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
+            "name": "NonRepeatingChar",
+            "request": "launch",
+            "mainClass": "Queue.NonRepeatingChar",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "StackUsingQueue",
             "request": "launch",
             "mainClass": "Stack.StackUsingQueue",
