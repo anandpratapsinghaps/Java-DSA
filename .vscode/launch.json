@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QueueUsingStack",
+            "request": "launch",
+            "mainClass": "Queue.QueueUsingStack",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "QueueLL",
             "request": "launch",
             "mainClass": "Queue.QueueLL",
