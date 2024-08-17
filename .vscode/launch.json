@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "basic",
+            "request": "launch",
+            "mainClass": "Hashing.basic",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "DequeJCF",
             "request": "launch",
             "mainClass": "Queue.DequeJCF",
