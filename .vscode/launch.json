@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DequeJCF",
+            "request": "launch",
+            "mainClass": "Queue.DequeJCF",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "InterLeave",
             "request": "launch",
             "mainClass": "Queue.InterLeave",
