@@ -1,5 +1,6 @@
 package Hashing;
 import java.util.HashMap;
+import java.util.Set;
 public class basic {
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
@@ -8,13 +9,13 @@ public class basic {
         map.put("India", 100);
         map.put("China", 150);
         map.put("US", 50);
-        System.out.println(map);
+        System.out.println(map); 
 
         //get
         System.out.println(map.get("India"));
         System.out.println(map.get("Uk"));
 
-        //contains
+       //contains
         System.out.println(map.containsKey("US"));
         
         //remove
@@ -24,7 +25,16 @@ public class basic {
         //size
         System.out.println(map.size());
 
-        //isEmpty
+         //isEmpty
         System.out.println(map.isEmpty());
+
+        //iterate
+        Set<String> keys = map.keySet();
+        System.out.println(keys);
+        
+        for(String k : keys){
+            System.out.println("Key = " + k + ", value = "+ map.get(k));
+        }
+
     }
 }
