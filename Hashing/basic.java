@@ -25,7 +25,7 @@ public class basic {
         //size
         System.out.println(map.size());
 
-         //isEmpty
+        //isEmpty
         System.out.println(map.isEmpty());
 
         //iterate
