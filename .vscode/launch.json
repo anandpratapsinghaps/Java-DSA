@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Linkedhashmap",
+            "request": "launch",
+            "mainClass": "Hashing.Linkedhashmap",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "basic",
             "request": "launch",
             "mainClass": "Hashing.basic",
