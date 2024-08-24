@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MajorityElement",
+            "request": "launch",
+            "mainClass": "Hashing.MajorityElement",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "Treemap",
             "request": "launch",
             "mainClass": "Hashing.Treemap",
