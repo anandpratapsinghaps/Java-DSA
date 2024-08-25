@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "itineraryTickets",
+            "request": "launch",
+            "mainClass": "Hashing.itineraryTickets",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "UnionAndIntersection",
             "request": "launch",
             "mainClass": "Hashing.UnionAndIntersection",
