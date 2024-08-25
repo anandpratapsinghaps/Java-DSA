@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IteratorInSet",
+            "request": "launch",
+            "mainClass": "Hashing.IteratorInSet",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "hashSet",
             "request": "launch",
             "mainClass": "Hashing.hashSet",
