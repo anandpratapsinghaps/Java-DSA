@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UnionAndIntersection",
+            "request": "launch",
+            "mainClass": "Hashing.UnionAndIntersection",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
+            "name": "distinctElement",
+            "request": "launch",
+            "mainClass": "Hashing.distinctElement",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "IteratorInSet",
             "request": "launch",
             "mainClass": "Hashing.IteratorInSet",
