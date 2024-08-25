@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "hashSet",
+            "request": "launch",
+            "mainClass": "Hashing.hashSet",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "ValidAnagram",
             "request": "launch",
             "mainClass": "Hashing.ValidAnagram",
