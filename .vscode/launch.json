@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxSubArraySumZero",
+            "request": "launch",
+            "mainClass": "Hashing.MaxSubArraySumZero",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "itineraryTickets",
             "request": "launch",
             "mainClass": "Hashing.itineraryTickets",
