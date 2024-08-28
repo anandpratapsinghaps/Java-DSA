@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "virusInfaction",
+            "request": "launch",
+            "mainClass": "practiceQues.virusInfaction",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "MaxSubArraySumZero",
             "request": "launch",
             "mainClass": "Hashing.MaxSubArraySumZero",
