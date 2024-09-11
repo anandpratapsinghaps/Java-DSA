@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RotateArray",
+            "request": "launch",
+            "mainClass": "RotateArray",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
+            "name": "InsertLast",
+            "request": "launch",
+            "mainClass": "InsertLast",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "virusInfaction",
             "request": "launch",
             "mainClass": "practiceQues.virusInfaction",
