@@ -4,6 +4,7 @@ public class max_sum_window_size {
     public static void main(String[] args) {
         int[] arr = {2, 3, 4, 1, 2, 7, 5, 9, 3, 2, 4};
         int k = 3;
+        System.out.println(maxSum(arr, k));
     }
     public static int maxSum(int[] arr, int k){
         int ans = 0, sum = 0;
