@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Subarray_Product_Less_Than_K",
+            "request": "launch",
+            "mainClass": "Sliding_Window.Subarray_Product_Less_Than_K",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "max_sum_window_size",
             "request": "launch",
             "mainClass": "Sliding_Window.max_sum_window_size",
