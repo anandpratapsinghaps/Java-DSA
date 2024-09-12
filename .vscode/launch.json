@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Tavas_and_SaDDas",
+            "request": "launch",
+            "mainClass": "Bit_Manipulation.Tavas_and_SaDDas",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "magic_num",
             "request": "launch",
             "mainClass": "Bit_Manipulation.magic_num",
