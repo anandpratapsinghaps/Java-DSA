@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bitWise",
+            "request": "launch",
+            "mainClass": "Bit_Manipulation.bitWise",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
+            "name": "ReverseWordInString",
+            "request": "launch",
+            "mainClass": "Strings.ReverseWordInString",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
+            "name": "Kth_Root",
+            "request": "launch",
+            "mainClass": "Binary_Search.Kth_Root",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "ProductOfArrayExceptSelf",
             "request": "launch",
             "mainClass": "ProductOfArrayExceptSelf",
