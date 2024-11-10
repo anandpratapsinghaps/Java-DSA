@@ -1,7 +1,13 @@
 package OOPs;
 
 public class Oops {
-    
+    public static void main(String[] args) {
+        Pen p1 = new Pen();  //created an object p1 Pen() -> constructor
+        p1.setColor("Red");
+        p1.setTip(5);
+        System.out.println(p1.color);
+        System.out.println(p1.tip);
+    }
 }
 class Pen{
 
