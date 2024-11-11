@@ -5,20 +5,27 @@ public class Oops {
         Pen p1 = new Pen();  //created an object p1 Pen() -> constructor
         p1.setColor("Red");
         p1.setTip(5);
-        System.out.println(p1.color);
-        System.out.println(p1.tip);
+        System.out.println(p1.getColor());
+        System.out.println(p1.getTip());
     }
 }
 class Pen{
 
     //properties
 
-    String color;
-    int tip;
+    private String color;
+    private int tip;
 
     //function
 
-    void setColor(String newColor){
+    String getColor(){     //getter
+        return this.color;
+    }
+    int getTip(){
+        return this.tip;
+    }
+
+    void setColor(String newColor){   //setter
         color = newColor;
     }
     void setTip(int newTip){
