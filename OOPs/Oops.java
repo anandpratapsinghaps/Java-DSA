@@ -11,6 +11,18 @@ public class Oops {
         Student s2 = new Student("Anand");
         Student s3 = new Student(143);
 
+        //copy const obj
+        Student s4 = new Student(s1);
+        Fish shark = new Fish();
+        shark.eat();
+        horse h = new horse();
+        h.eat();
+        h.walk();
+        chicken c = new chicken();
+        c.eat();
+        c.walk();
+        
+
     }
 }
 class Pen{
@@ -57,6 +69,11 @@ class Student{
         System.out.println("Hello");
     }
 
+    //copy const.
+    Student(Student s1){
+        this.name = s1.name;
+        this.age = s1.age;
+    }
 
     //parameterized 
     Student(String name){
@@ -64,5 +81,48 @@ class Student{
     }
     Student(int age){
         this.age = age;
+    }
+}
+
+
+
+//Inheritance
+
+//Base class
+class Animal{
+    String color;
+    void eat(){
+        System.out.println("kha rhe hai");
+    }
+    void breathe(){
+        System.out.println("saans le rhe hai");
+    }
+}
+
+//Derived class
+class Fish extends Animal{
+    int fins;
+    void swim(){
+        System.out.println("swim kr rhi hai");
+    }
+}
+
+//abstraction
+
+abstract class Animal1 {
+    void eat(){
+        System.out.println("eats");
+    }
+    abstract void walk();
+}
+
+class horse extends Animal1{
+    void walk(){
+        System.out.println("walk on 4 legs");
+    }
+}
+class chicken extends Animal1{
+    void walk(){
+        System.out.println("walk on 2 legs");
     }
 }
