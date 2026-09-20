@@ -1,7 +1,8 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "cSpell.words": [
-        "Anand"
+        "Anand",
+        "nums"
     ],
     "java.test.config": [
         {
