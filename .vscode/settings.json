@@ -2,7 +2,9 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "cSpell.words": [
         "Anand",
-        "nums"
+        "linearsearch",
+        "nums",
+        "yaha"
     ],
     "java.test.config": [
         {

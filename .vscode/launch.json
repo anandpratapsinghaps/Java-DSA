@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ls",
+            "request": "launch",
+            "mainClass": "ls",
+            "projectName": "Java Programs_77a22f37"
+        },
+        {
+            "type": "java",
             "name": "Jagged_Array",
             "request": "launch",
             "mainClass": "Jagged_Array",
